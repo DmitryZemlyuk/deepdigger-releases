@@ -1,0 +1,27 @@
+:root { --bg: #1b130f; --panel: rgba(48, 34, 40, 0.92); --accent: #e8a030; --text: #f8eedf; }
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); color: var(--text);
+  font-family: "Roboto", "Segoe UI", system-ui, -apple-system, Arial, sans-serif; overscroll-behavior: none;
+  -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+#game { position: fixed; inset: 0; display: block; touch-action: none; }
+#safe { position: fixed; visibility: hidden; pointer-events: none;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); }
+#apk { position: fixed; left: max(14px, env(safe-area-inset-left)); bottom: 14px; display: none; align-items: center; gap: 8px;
+  padding: 9px 16px 9px 12px; border-radius: 999px; background: var(--panel); color: var(--text); text-decoration: none;
+  font-weight: 700; font-size: clamp(13px, 2.4vh, 18px); box-shadow: 0 2px 10px rgba(0,0,0,.35); }
+#apk.show { display: inline-flex; }
+#apk svg { width: 1.2em; height: 1.2em; color: var(--accent); }
+#apk:hover { background: rgba(70, 52, 58, 0.95); }
+#rotate { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; text-align: center;
+  background: rgba(20, 14, 12, 0.94); z-index: 5; padding: 24px; }
+#rotate.show { display: flex; }
+#rotate svg { width: 72px; height: 72px; color: var(--accent); }
+#rotate p { font-size: 18px; font-weight: 700; margin: 12px 0 0; }
+#loading { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; background: var(--bg);
+  z-index: 10; transition: opacity .5s; }
+#loading.done { opacity: 0; pointer-events: none; }
+#loading .box { text-align: center; }
+#loading img { width: 96px; height: 96px; border-radius: 22px; box-shadow: 0 6px 24px rgba(0,0,0,.4); }
+#loading .title { font-weight: 800; font-size: 26px; margin: 14px 0 16px; color: #ffd27a; }
+#loading .track { width: 200px; height: 8px; border-radius: 4px; background: rgba(255,255,255,.12); overflow: hidden; margin: 0 auto; }
+#bar { width: 0; height: 100%; background: var(--accent); transition: width .15s; }

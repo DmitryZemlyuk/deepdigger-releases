@@ -1,0 +1,69 @@
+# Creates a GitHub release from latest.json whenever a new version is pushed.
+# The APK is attached twice: with its version in the name and as DeepDigger.apk, so
+# https://github.com/DmitryZemlyuk/deepdigger-releases/releases/latest/download/DeepDigger.apk always gets the newest one.
+name: Release from latest.json
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - latest.json
+      - .github/workflows/release.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Read version
+        id: v
+        run: |
+          VERSION=$(jq -r .version latest.json)
+          APK="apk/DeepDigger-${VERSION}.apk"
+          NOTES=$(jq -r '.notes // ""' latest.json)
+          test -f "$APK" || { echo "::error::$APK not found"; exit 1; }
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "apk=$APK" >> "$GITHUB_OUTPUT"
+          { echo "notes<<EOF_NOTES"; echo "$NOTES"; echo "EOF_NOTES"; } >> "$GITHUB_OUTPUT"
+
+      - name: Create release (or update its notes if it already exists)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.v.outputs.version }}
+          APK: ${{ steps.v.outputs.apk }}
+          NOTES: ${{ steps.v.outputs.notes }}
+        run: |
+          if gh release view "v$VERSION" >/dev/null 2>&1; then
+            echo "Release v$VERSION exists, syncing its notes with latest.json"
+            gh release edit "v$VERSION" --notes "$NOTES"
+            exit 0
+          fi
+          cp "$APK" DeepDigger.apk
+          gh release create "v$VERSION" "$APK" DeepDigger.apk --title "$VERSION" --notes "$NOTES" --target main --latest
+
+      - name: Keep only the last 3 versions (releases, tags and APK files)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          KEEP: 3
+        run: |
+          KEPT=$(gh release list --limit 100 --json tagName -q '.[].tagName' | sed 's/^v//' | sort -V -r | head -n "$KEEP")
+          echo "Keeping: $(echo $KEPT)"
+          for TAG in $(gh release list --limit 100 --json tagName -q '.[].tagName'); do
+            echo "$KEPT" | grep -qx "${TAG#v}" || { echo "Deleting release $TAG"; gh release delete "$TAG" --yes --cleanup-tag; }
+          done
+          CHANGED=0
+          for F in apk/DeepDigger-*.apk; do
+            V=$(basename "$F" .apk); V=${V#DeepDigger-}
+            echo "$KEPT" | grep -qx "$V" || { echo "Removing $F"; git rm -q "$F"; CHANGED=1; }
+          done
+          if [ "$CHANGED" = 1 ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -q -m "Remove APKs older than the last $KEEP versions"
+            git push
+          fi
