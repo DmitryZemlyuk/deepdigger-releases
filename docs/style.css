@@ -25,3 +25,18 @@ html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); c
 #loading .title { font-weight: 800; font-size: 26px; margin: 14px 0 16px; color: #ffd27a; }
 #loading .track { width: 200px; height: 8px; border-radius: 4px; background: rgba(255,255,255,.12); overflow: hidden; margin: 0 auto; }
 #bar { width: 0; height: 100%; background: var(--accent); transition: width .15s; }
+[hidden] { display: none !important; }
+#gate { position: fixed; inset: 0; z-index: 20; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 10px; padding: 20px; background: radial-gradient(circle at 50% 30%, #3a2a24, var(--bg) 70%); }
+#gate img { width: 84px; height: 84px; border-radius: 20px; box-shadow: 0 6px 24px rgba(0,0,0,.4); }
+#gate .title { font-weight: 800; font-size: 24px; color: #ffd27a; margin: 4px 0 8px; }
+#gate input { width: min(280px, 80vw); padding: 11px 14px; border-radius: 12px; border: 1px solid rgba(255,255,255,.15);
+  background: rgba(255,255,255,.07); color: var(--text); font: inherit; font-size: 16px; outline: none; }
+#gate input:focus { border-color: var(--accent); }
+#gate button { width: min(280px, 80vw); padding: 11px; border: 0; border-radius: 12px; background: var(--accent); color: #3a1a08;
+  font: inherit; font-weight: 800; font-size: 16px; cursor: pointer; }
+#gate button:disabled { opacity: .6; }
+#gate-err { min-height: 1.2em; color: #ff9a8a; font-size: 14px; font-weight: 600; }
+#gate .apk-small { color: #c8b8a8; font-size: 13px; }
+#gate.shake { animation: shake .35s; }
+@keyframes shake { 20%, 60% { transform: translateX(-8px); } 40%, 80% { transform: translateX(8px); } }
