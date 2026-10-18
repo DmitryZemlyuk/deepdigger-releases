@@ -1,6 +1,6 @@
 {
-  "version": "2.0.4",
-  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.0.4.apk",
+  "version": "2.0.5",
+  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.0.5.apk",
   "size": 10260312,
-  "notes": "New, brighter voices for the townsfolk (no more low mooing)."
+  "notes": "Surface, mine and deep music now play at the same loudness."
 }
