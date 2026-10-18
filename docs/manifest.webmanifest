@@ -1,6 +1,6 @@
 {
-  "name": "РудоКот",
-  "short_name": "РудоКот",
+  "name": "Deep Digger",
+  "short_name": "Deep Digger",
   "start_url": "./",
   "scope": "./",
   "display": "fullscreen",
