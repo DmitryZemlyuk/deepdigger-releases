@@ -1,6 +1,6 @@
 {
-  "version": "2.0.12",
-  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.0.12.apk",
-  "size": 11879205,
-  "notes": "Lost friends in the mine now fall when you dig out the ground under them."
+  "version": "2.1.0",
+  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.1.0.apk",
+  "size": 11883301,
+  "notes": "Teleport now asks where to go: home or to your beacon."
 }
