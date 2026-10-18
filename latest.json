@@ -1,6 +1,6 @@
 {
-  "version": "2.0.3",
-  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.0.3.apk",
-  "size": 10243928,
-  "notes": "Fixed thin blue lines flickering in the cave back wall of dug tunnels."
+  "version": "2.0.4",
+  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.0.4.apk",
+  "size": 10260312,
+  "notes": "New, brighter voices for the townsfolk (no more low mooing)."
 }
