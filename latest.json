@@ -1,6 +1,6 @@
 {
-  "version": "2.1.4",
-  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.1.4.apk",
+  "version": "2.1.5",
+  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.1.5.apk",
   "size": 11887397,
-  "notes": "Mine gate: no gap between the beam and the braces."
+  "notes": "Tidier shop rows: name and description centred together."
 }
