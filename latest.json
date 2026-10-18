@@ -1,6 +1,6 @@
 {
-  "version": "2.0",
-  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.0.apk",
+  "version": "2.0.1",
+  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.0.1.apk",
   "size": 10235736,
-  "notes": "Renamed to OreCat (РудоКот). Beetles chase you and some come back after you faint; double jump and a teleport beacon in the shop; falling lava; first-launch language choice; keyboard remapping and a desktop layout in the web version; many fixes."
+  "notes": "English name is Deep Digger again (Russian: РудоКот, Ukrainian: РудоКіт)."
 }

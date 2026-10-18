@@ -1,4 +1,4 @@
-# OreCat (РудоКот) — APK releases and web version
+# Deep Digger (РудоКот) — APK releases and web version
 
 A cozy mining game for Android: dig down through the mountain, sell ore, upgrade your gear and find the Heart of the Mountain. This repository holds **APK builds and the web build only**, no sources.
 
