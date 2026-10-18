@@ -1,6 +1,6 @@
 {
-  "version": "2.0.1",
-  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.0.1.apk",
-  "size": 10235736,
-  "notes": "English name is Deep Digger again (Russian: РудоКот, Ukrainian: РудоКіт)."
+  "version": "2.0.2",
+  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.0.2.apk",
+  "size": 10243928,
+  "notes": "Softer page-turn sound in the intro and journal pages."
 }
