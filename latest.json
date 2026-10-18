@@ -1,6 +1,6 @@
 {
-  "version": "2.0.10",
-  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.0.10.apk",
+  "version": "2.0.11",
+  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.0.11.apk",
   "size": 11879205,
-  "notes": "Smoother scrolling in the browser (cached terrain, steadier frame timing); crisp small icons on the web."
+  "notes": "Fixed a dark digit showing over the coin next to ore rewards."
 }
