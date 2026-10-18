@@ -44,7 +44,7 @@
       try { localStorage.setItem(KEY, JSON.stringify(await crypto.subtle.exportKey('jwk', key))); } catch (e) { /* private mode */ }
       start(code);
     } catch (e) {
-      err.textContent = 'Неверный логин или пароль';
+      err.textContent = 'Wrong login or password';
       form.classList.remove('shake'); void form.offsetWidth; form.classList.add('shake');
     }
   }
@@ -55,6 +55,6 @@
     b.disabled = true;
     login(form.login.value, form.password.value).finally(() => { b.disabled = false; });
   });
-  if (!window.crypto || !crypto.subtle) { form.hidden = false; err.textContent = 'Нужен HTTPS и современный браузер'; return; }
+  if (!window.crypto || !crypto.subtle) { form.hidden = false; err.textContent = 'HTTPS and a modern browser are required'; return; }
   tryStored();
 })();
