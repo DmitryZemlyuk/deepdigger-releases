@@ -1,6 +1,6 @@
 {
-  "version": "2.1.1",
-  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.1.1.apk",
-  "size": 11883301,
-  "notes": "The beacon falls when dug under, shop descriptions wrap onto two lines, and touch players see how to dig down."
+  "version": "2.1.2",
+  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.1.2.apk",
+  "size": 11887397,
+  "notes": "Wider mine gate: its posts stand on flat ground beside the shaft."
 }
