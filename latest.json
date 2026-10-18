@@ -1,6 +1,6 @@
 {
-  "version": "2.1.5",
-  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.1.5.apk",
+  "version": "2.1.6",
+  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.1.6.apk",
   "size": 11887397,
-  "notes": "Tidier shop rows: name and description centred together."
+  "notes": "On small screens the top hint and the \"Dig here\" sign no longer overlap."
 }
