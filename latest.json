@@ -1,6 +1,6 @@
 {
-  "version": "2.0.6",
-  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.0.6.apk",
-  "size": 10260312,
-  "notes": "Keyboard play: the hero no longer keeps walking on its own (stuck keys after switching windows, mouse clicks acting as a hidden joystick)."
+  "version": "2.0.7",
+  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.0.7.apk",
+  "size": 10510168,
+  "notes": "New character voices: cute cartoon gibberish made from real voice recordings."
 }
