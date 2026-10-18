@@ -1,6 +1,6 @@
 {
-  "version": "2.0.8",
-  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.0.8.apk",
-  "size": 11862738,
-  "notes": "Four phrases per character, never the same one twice in a row. Web: switching browser tabs no longer leaves the game paused and deaf to the keyboard."
+  "version": "2.0.9",
+  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.0.9.apk",
+  "size": 11879205,
+  "notes": "New painted teleport beacon that matches the rest of the art."
 }
