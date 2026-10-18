@@ -1,6 +1,6 @@
 {
-  "version": "2.1.0",
-  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.1.0.apk",
+  "version": "2.1.1",
+  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.1.1.apk",
   "size": 11883301,
-  "notes": "Teleport now asks where to go: home or to your beacon."
+  "notes": "The beacon falls when dug under, shop descriptions wrap onto two lines, and touch players see how to dig down."
 }
