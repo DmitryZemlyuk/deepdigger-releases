@@ -1,6 +1,6 @@
 {
-  "name": "Рудокоп",
-  "short_name": "Рудокоп",
+  "name": "РудоКот",
+  "short_name": "РудоКот",
   "start_url": "./",
   "scope": "./",
   "display": "fullscreen",

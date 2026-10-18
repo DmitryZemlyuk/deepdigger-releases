@@ -40,3 +40,17 @@ html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); c
 #gate .apk-small { color: #c8b8a8; font-size: 13px; }
 #gate.shake { animation: shake .35s; }
 @keyframes shake { 20%, 60% { transform: translateX(-8px); } 40%, 80% { transform: translateX(8px); } }
+#keys { position: fixed; inset: 0; z-index: 15; display: flex; align-items: center; justify-content: center; background: rgba(10, 6, 8, 0.72); }
+#keys .box { background: #302228; border: 2px solid var(--accent); border-radius: 16px; padding: 18px 22px; width: min(560px, 94vw);
+  max-height: 92vh; overflow: auto; box-shadow: 0 10px 40px rgba(0,0,0,.5); }
+#keys .kt { font-weight: 800; font-size: 22px; color: #ffd27a; text-align: center; }
+#keys .kh { font-size: 13px; color: #c8b8a8; text-align: center; margin: 4px 0 12px; }
+#keys .row { display: grid; grid-template-columns: 1fr 92px 92px; gap: 8px; align-items: center; padding: 4px 0;
+  border-bottom: 1px solid rgba(255,255,255,.06); font-size: 15px; }
+#keys button { font: inherit; font-weight: 700; color: var(--text); background: #4a3a44; border: 0; border-radius: 9px;
+  padding: 7px 8px; cursor: pointer; }
+#keys button:hover { background: #64505c; }
+#keys button.cap { background: var(--accent); color: #3a1a08; font-size: 12px; }
+#keys .kb { display: flex; justify-content: flex-end; gap: 10px; margin-top: 14px; }
+#keys .kb button { padding: 9px 18px; }
+#keys .kb .primary { background: var(--accent); color: #3a1a08; }
