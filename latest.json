@@ -1,6 +1,6 @@
 {
-  "version": "2.0.9",
-  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.0.9.apk",
+  "version": "2.0.10",
+  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.0.10.apk",
   "size": 11879205,
-  "notes": "New painted teleport beacon that matches the rest of the art."
+  "notes": "Smoother scrolling in the browser (cached terrain, steadier frame timing); crisp small icons on the web."
 }
