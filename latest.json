@@ -1,6 +1,6 @@
 {
-  "version": "2.0.5",
-  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.0.5.apk",
+  "version": "2.0.6",
+  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.0.6.apk",
   "size": 10260312,
-  "notes": "Surface, mine and deep music now play at the same loudness."
+  "notes": "Keyboard play: the hero no longer keeps walking on its own (stuck keys after switching windows, mouse clicks acting as a hidden joystick)."
 }
