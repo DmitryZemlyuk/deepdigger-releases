@@ -1,6 +1,6 @@
 {
-  "version": "2.2.0",
-  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.2.0.apk",
-  "size": 11907958,
-  "notes": "Switching to a hero with a smaller bag leaves the extra ore in a pouch you can come back for."
+  "version": "2.3.0",
+  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.3.0.apk",
+  "size": 12076146,
+  "notes": "New abilities that open new places: the drill (granite vaults full of ore) and fireproof boots (lava vaults with rubies and relics)."
 }
