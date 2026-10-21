@@ -1,6 +1,6 @@
 {
-  "version": "2.3.2",
-  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.3.2.apk",
+  "version": "2.3.3",
+  "url": "https://raw.githubusercontent.com/DmitryZemlyuk/deepdigger-releases/main/apk/DeepDigger-2.3.3.apk",
   "size": 11907958,
-  "notes": "Ladders no longer stand on lava: a ladder that falls onto lava burns."
+  "notes": "Teleport home lands on the grass next to the mine shaft instead of dropping back into it."
 }
